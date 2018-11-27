@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ForniteUService</string>
+    <array name="spinnerItems">
+        <item>pc</item>
+        <item>psn</item>
+        <item>xbl</item>
+    </array>
+</resources>
