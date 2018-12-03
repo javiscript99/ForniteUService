@@ -1,17 +1,18 @@
-package com.example.javi.forniteuservice.ForniteStadistics;
+package com.example.javi.forniteuservice.ForniteStadistics.dto;
 
-public class ForniteRank {
+public class ForniteDataDetails {
 
-    private String label;
+    private String field;
     private String rank;
     private String displayValue;
 
-    public String getLabel() {
-        return label;
+
+    public String getField() {
+        return field;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
+    public void setField(String field) {
+        this.field = field;
     }
 
     public String getRank() {

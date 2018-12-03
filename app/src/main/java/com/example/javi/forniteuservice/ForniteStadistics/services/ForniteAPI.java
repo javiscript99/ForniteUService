@@ -1,9 +1,6 @@
-package com.example.javi.forniteuservice.ForniteStadistics;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+package com.example.javi.forniteuservice.ForniteStadistics.services;
 
-import java.util.List;
-
+import com.example.javi.forniteuservice.ForniteStadistics.dto.ForniteUser;
 import io.reactivex.Observable;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -14,9 +11,9 @@ import retrofit2.http.Path;
 
 public interface ForniteAPI {
 
-    @Headers("TRN-Api-Key: 3181e97d-6177-42ac-9c02-e61f5934dffd")
+    @Headers("TRN-Api-Key: d4630b9f-745c-4778-8f77-b9d98ea35a02")
     @GET("v1/profile/{platform}/{epic-nickname}")
-    Observable<Fornite> getInfoFornite(@Path("platform") String platform , @Path("epic-nickname") String epic_nickname);
+    Observable<ForniteUser> getInfoFornite(@Path("platform") String platform , @Path("epic-nickname") String epic_nickname);
 
 
     static ForniteAPI Factory(){
